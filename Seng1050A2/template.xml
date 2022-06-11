@@ -1,0 +1,61 @@
+<!--template.xml
+	SENG1050 Assignment 2
+	Due: 1/11/20
+	Student: Harlan De Jong
+	Student No: 3349828
+	File Created: 10/9/20  
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="CategoryPages-xslt.xsl" type="text/xsl"?>
+<!DOCTYPE holidays[
+	<!ELEMENT holidays (holidayType, holiday*)>
+	<!ELEMENT holiday (packageName, attributes, accomOptions+, couponCode?, reviews*, promoPicFile+, externalPageURL)>
+	<!ELEMENT holidayType (#PCDATA)>
+	<!ELEMENT packageName (#PCDATA)>
+	<!ELEMENT attributes (description, cost, numNights, popularity)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT cost (#PCDATA)>
+	<!ELEMENT numNights (#PCDATA)>
+	<!ELEMENT popularity (#PCDATA)>
+	<!ELEMENT accomOptions (roomNumber, location, additionalCost, bedroomNumber, bathroomNumber)>
+	<!ELEMENT roomNumber (#PCDATA)>
+	<!ELEMENT location (#PCDATA)>
+	<!ELEMENT bedroomNumber (#PCDATA)>
+	<!ELEMENT bathroomNumber (#PCDATA)>
+	<!ELEMENT additionalCost (#PCDATA)>
+	<!ELEMENT couponCode (#PCDATA)>
+	<!ELEMENT reviews (#PCDATA)>
+	<!ELEMENT promoPicFile (#PCDATA)>
+	<!ELEMENT externalPageURL (#PCDATA)>
+	<!ATTLIST promoPicFile src CDATA #REQUIRED>
+	<!ATTLIST cost currency CDATA "AUD">
+	<!ATTLIST additionalCost currency CDATA "AUD">
+	<!ENTITY descTemplate "This holiday offers an array of ">
+]>
+
+<holidays>
+	<holidayType>
+		
+	</holidayType>
+	<holiday>
+		<packageName></packageName>
+		<attributes>
+			<description></description>
+			<cost></cost>
+			<numNights></numNights>
+			<popularity></popularity>
+		</attributes>
+		<accomOptions>
+			<roomNumber></roomNumber>
+			<location></location>
+			<additionalCost></additionalCost>
+			<bedroomNumber></bedroomNumber>
+			<bathroomNumber></bathroomNumber>
+		</accomOptions>
+		<couponCode></couponCode>
+		<reviews></reviews>
+		<promoPicFile src="images/France.jpg"></promoPicFile>
+		<externalPageURL></externalPageURL>
+	</holiday>
+</holidays>

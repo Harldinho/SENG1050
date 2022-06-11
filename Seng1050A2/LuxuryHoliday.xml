@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="CategoryPages-xslt.xsl" type="text/xsl"?>
+<!DOCTYPE holidays[
+	<!ELEMENT holidays (holidayType, holiday*)>
+	<!ELEMENT holiday (packageName, attributes, accomOptions+, couponCode?, reviews*, promoPicFile+, externalPageURL)>
+	<!ELEMENT holidayType (#PCDATA)>
+	<!ELEMENT packageName (#PCDATA)>
+	<!ELEMENT attributes (description, cost, numNights, popularity)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT cost (#PCDATA)>
+	<!ELEMENT numNights (#PCDATA)>
+	<!ELEMENT popularity (#PCDATA)>
+	<!ELEMENT accomOptions (roomNumber, location, additionalCost, bedroomNumber, bathroomNumber)>
+	<!ELEMENT roomNumber (#PCDATA)>
+	<!ELEMENT location (#PCDATA)>
+	<!ELEMENT bedroomNumber (#PCDATA)>
+	<!ELEMENT bathroomNumber (#PCDATA)>
+	<!ELEMENT additionalCost (#PCDATA)>
+	<!ELEMENT couponCode (#PCDATA)>
+	<!ELEMENT reviews (#PCDATA)>
+	<!ELEMENT promoPicFile (#PCDATA)>
+	<!ELEMENT externalPageURL (#PCDATA)>
+	<!ATTLIST promoPicFile src CDATA #REQUIRED> 
+	<!ATTLIST cost currency CDATA "AUD">
+	<!ATTLIST additionalCost currency CDATA "AUD">
+	<!ENTITY descTemplate "This holiday offers an array of ">
+]>
+
+<holidays>
+	<holidayType>Luxury Holidays</holidayType>
+	<holiday>
+		<packageName>French Indulgence</packageName>
+		<attributes>
+			<description>&descTemplate;luxurious ammenities and service like no other.</description>
+			<cost>$950</cost>
+			<numNights>4</numNights>
+			<popularity>4/5 stars</popularity>
+		</attributes>
+		<accomOptions>
+			<roomNumber>32</roomNumber>
+			<location>France</location>
+			<additionalCost>20</additionalCost>
+			<bedroomNumber>2</bedroomNumber>
+			<bathroomNumber>1</bathroomNumber>
+		</accomOptions>
+		<couponCode>LP976W</couponCode>
+		<reviews>"Service like no other!"</reviews>
+		<promoPicFile src="images/France.jpg">images/France.jpg</promoPicFile>
+		<externalPageURL>https://www.tripadvisor.com.au/</externalPageURL>
+	</holiday>
+
+	<holiday>
+		<packageName>London Luxury</packageName>
+		<attributes>
+			<description>&descTemplate;quality meals and beverages at an extremely high standard of service</description>
+			<cost>$2000</cost>
+			<numNights>4</numNights>
+			<popularity>5/5 stars</popularity>
+		</attributes>
+		<accomOptions>
+			<roomNumber>43</roomNumber>
+			<location>London</location>
+			<additionalCost>130</additionalCost>
+			<bedroomNumber>1</bedroomNumber>
+			<bathroomNumber>1</bathroomNumber>
+		</accomOptions>
+		<couponCode>QW2D56</couponCode>
+		<reviews>"Wonderful servce"</reviews>
+		<promoPicFile src="images/London.jpg">images/London.jpg</promoPicFile>
+		<externalPageURL>https://www.tripadvisor.com.au/</externalPageURL>
+	</holiday>
+
+	<holiday>
+		<packageName>Norway Stay</packageName>
+		<attributes>
+			<description>&descTemplate;high quality catered services for yourself and a loved one, to experience the best night ever</description>
+			<cost>$1200</cost>
+			<numNights>1</numNights>
+			<popularity>3/5</popularity>
+		</attributes>
+		<accomOptions>
+			<roomNumber>2</roomNumber>
+			<location>Norway</location>
+			<additionalCost>0</additionalCost>
+			<bedroomNumber>1</bedroomNumber>
+			<bathroomNumber>1</bathroomNumber>
+		</accomOptions>
+		<couponCode>R5T76Y</couponCode>
+		<reviews>"The most intimate destination available"</reviews>
+		<promoPicFile src="images/Norway.jpg">images/Norway.jpg</promoPicFile>
+		<externalPageURL>https://www.tripadvisor.com.au/</externalPageURL>
+	</holiday>
+</holidays>

@@ -1,0 +1,119 @@
+<!--DataCollection.html
+	SENG1050 Assignment 2
+	Due: 1/11/20
+	Student: Harlan De Jong
+	Student No: 3349828 
+	File Created: 20/10/20
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css"><!--linking the cascasing style sheet to the html document (style.css)-->
+		<title>Data Collection Page</title>
+		<!--Included style because I lost marks last time for not having it-->
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<div class="menuBar"> <!--This indicates the bar displaying the relative links to the XML pages at the top of the page-->
+			<a class="link" href="index.html">Home Page</a>
+			<a class="link" href="BeachHoliday.xml">Beach Holidays</a><!--Relatively linked XML pages (BeachHoliday.xml, LuxuryHoliday.xml)-->
+			<a class="link" href="LuxuryHoliday.xml">Luxury Holidays</a>
+			<a class="link" href="DataCollection.html">Data Collection Page</a><!--Links to all other pages using relative URL-->
+			<a class="link" href="PrivacyPolicy.html">Privacy Policy</a>
+			<a class="link" href="TermsConditions.html">Terms and Conditions</a>
+			<a class="link" href="AboutUs.html">About Us</a>
+			<a class="link" href="Contact.html">Contact Us</a>
+		</div>
+		<h1><span>GoHoliday Suggestion Form!</span></h1><!--Heading 1 telling users what the page is about-->
+		<script type="text/javascript">
+			function validateForm() {
+
+				var emailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; /*the format the email should use when typed in*/
+				var fname = document.forms["myForm"]["fname"].value; /* retrieving values for each variable for validation*/
+				var DOB = document.forms["myForm"]["DOB"].value;
+				var email = document.forms["myForm"]["email"].value;
+				var holidaynum = document.forms["myForm"]["holidaysnum"].value;
+
+				var splitDOB = DOB.split("/"); /*splitting the DOB by the / character*/
+				var year = parseInt(splitDOB[0], 10); /*assigning the year an int that is the first element in the splitted DOB for validation of year*/
+ 				if (fname == "") {
+    				alert("first name must be filled out"); /*if the first name isnt filled out run*/
+    				return false;
+ 				}
+ 				else if(year > 2019 || year < 1850 || DOB == ""){
+ 					alert("please enter a valid DOB (if using internet explorer use YYYY/MM/DD)"); /*if the year is not between 1850 and 2019 run, or the DOB isnt filled out*/
+ 					return false;
+ 				}
+ 				else if(!email.match(emailformat)){ /*if the inputted email doesnt abide by the email format standard run*/
+ 					alert("email is invalid");
+ 					return false;
+ 				}
+ 				else if(holidaynum == ""){
+ 					alert("must fill out Number of holidays submitted"); /*if the holiday numbers arent filled out run*/
+ 					return false;
+ 				}
+			}
+		</script>
+		<div class="formDiv"> <!--assigning entire form to a div -->
+			<form name="myForm" action="http://jkorpela.fi/cgi-bin/echo.cgi" onsubmit="return validateForm()" method="post"> <!--when the submit button is hot it take you to the website http://jkorpela.fi/cgi-bin/echo.cgi-->
+				<label class="required" for="firstname">First Name:</label> <!--labelling all elements...-->
+				<input id="firstname" type="text" name="fname"> <!--retrieving all elements...-->
+				<label for="lastname">Last Name:</label>
+				<input id="lastname" type="text" name="lname"><br>
+				<label class="required" for="DOB">Date of Birth:</label>
+				<input id="DOB" type="date" name="DOB"> <!--using type date for date of birth-->
+				<br>
+				<label class="required" for="emails">Email:</label>
+				<input id="emails" type="text" name="email"><br>
+				<label for="favec">Favourite colour:</label>
+				<input id="favec" type="color" name="favec"><br> <!--using type color -->
+				<label class="required" for="holidaysnum">Number of holidays submitted:</label>
+				<input id="holidaysnum" type="number" name="holidaynum" min="0"><br><!--using type number -->
+				<label for="retire">Are you retired?</label>
+				<input id="retire" type="radio" name="retired" value="yes"><!--using radio buttons -->
+				<label for="retire">Yes</label>
+				<input type="radio" name="retired" value="no" checked><!--using radio buttons -->
+				<label for="retire">No</label>
+
+				<hr>
+				<label for="hname">Name of the Holiday:</label>
+				<input id="hname" type="text" name="holidayname"><br>
+				<label for="holidaycat">Type of Holiday:</label>
+				<select id="holidaycat" name="holicat"> <!--using a drop down menu -->
+					<option value="beach">Beach</option>
+					<option value="Luxury">Luxury</option>
+					<option value="Adventure">Adventure</option>
+					<option value="Cruise">Cruise</option>
+					<option value="Ski">Ski</option>
+				</select><br>
+				<label for="desc">Description of holiday:</label>
+				<input id="desc" type="text" name="desc"><br>
+				<label for="price">What is included in the holiday:</label>
+				<label for="price">Price</label>
+				<input id="price" type="checkbox" name="price"> <!--using checkboxes... -->
+				<label for="coupon">| Coupon</label>
+				<input id="coupon" type="checkbox" name="coupon">
+				<label for="location">| Location</label>
+				<input id="location" type="checkbox" name="location">
+				<label for="roomnum">| Number of bedrooms</label>
+				<input id="roomnum" type="checkbox" name="roonnum">
+				<label for="nightnum">| Number of nights</label>
+				<input id="nightnum" type="checkbox" name="nightnum"><br><hr>
+
+				<input class="buttons" type="reset" value="Clear"> <!--reset button -->
+				<input class="buttons" type="submit" value="Submit"><!--submit button -->
+			</form>
+		</div>
+		<!--the copyright statement formatted in <address> tags displayed at the bottom right of the website-->
+		<address id="copyrightDC">
+		Harlan De Jong<br>
+		<a href="https://www.google.com.au">c3349828@uon.edu.au</a><br>
+		SENG1050<br>
+		</address>
+	</body>
+</html>

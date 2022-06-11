@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE holidays[
+	<!ELEMENT holidays (holiday+)>
+	<!ELEMENT holiday (packageName, attributes, accomOptions+, couponCode*, reviews*, promoPicFile*, externalPageURL)>
+	<!ELEMENT packageName (#PCDATA)>
+	<!ELEMENT attributes (description, cost, numNights, popularity)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT cost (#PCDATA)>
+	<!ELEMENT numNights (#PCDATA)>
+	<!ELEMENT popularity (#PCDATA)>
+	<!ELEMENT accomOptions (roomNumber, location, additionalCost, bedroomNumber, bathroomNumber)>
+	<!ELEMENT roomNumber (#PCDATA)>
+	<!ELEMENT location (#PCDATA)>
+	<!ELEMENT bedroomNumber (#PCDATA)>
+	<!ELEMENT bathroomNumber (#PCDATA)>
+	<!ELEMENT additionalCost (#PCDATA)>
+	<!ELEMENT couponCode (#PCDATA)>
+	<!ELEMENT reviews (#PCDATA)>
+	<!ELEMENT promoPicFile (#PCDATA)>
+	<!ELEMENT externalPageURL (#PCDATA)>
+	<!ATTLIST cost currency CDATA "AUD">
+	<!ATTLIST additionalCost currency CDATA "AUD">
+	<!ENTITY descTemplate "This holiday offers an array of ">
+]>

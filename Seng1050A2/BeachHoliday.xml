@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="CategoryPages-xslt.xsl" type="text/xsl"?>
+<!DOCTYPE holidays[
+	<!ELEMENT holidays (holidayType, holiday*)>
+	<!ELEMENT holiday (packageName, attributes, accomOptions+, couponCode?, reviews*, promoPicFile+, externalPageURL)>
+	<!ELEMENT holidayType (#PCDATA)>
+	<!ELEMENT packageName (#PCDATA)>
+	<!ELEMENT attributes (description, cost, numNights, popularity)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT cost (#PCDATA)>
+	<!ELEMENT numNights (#PCDATA)>
+	<!ELEMENT popularity (#PCDATA)>
+	<!ELEMENT accomOptions (roomNumber, location, additionalCost, bedroomNumber, bathroomNumber)>
+	<!ELEMENT roomNumber (#PCDATA)>
+	<!ELEMENT location (#PCDATA)>
+	<!ELEMENT bedroomNumber (#PCDATA)>
+	<!ELEMENT bathroomNumber (#PCDATA)>
+	<!ELEMENT additionalCost (#PCDATA)>
+	<!ELEMENT couponCode (#PCDATA)>
+	<!ELEMENT reviews (#PCDATA)>
+	<!ELEMENT promoPicFile (#PCDATA)>
+	<!ELEMENT externalPageURL (#PCDATA)>
+	<!ATTLIST promoPicFile src CDATA #REQUIRED>
+	<!ATTLIST cost currency CDATA "AUD">
+	<!ATTLIST additionalCost currency CDATA "AUD">
+	<!ENTITY descTemplate "This holiday offers an array of ">
+]>
+
+<holidays>
+	<holidayType>Beach Holidays</holidayType>
+	<holiday>
+		<packageName>Hawaii Getaway</packageName>
+		<attributes>
+			<description>&descTemplate;great beaches surrounding the secluded villa</description>
+			<cost>$400</cost>
+			<numNights>6</numNights>
+			<popularity>4/5 stars</popularity>
+		</attributes>
+		<accomOptions>
+			<roomNumber>25</roomNumber>
+			<location>Hawaii</location>
+			<additionalCost>70</additionalCost>
+			<bedroomNumber>2</bedroomNumber>
+			<bathroomNumber>1</bathroomNumber>
+		</accomOptions>
+		<couponCode>0PQ45T</couponCode>
+		<reviews>"Fantastic"</reviews>
+		<promoPicFile src="images/Hawaii.jpeg">images/Hawaii.jpeg</promoPicFile>
+		<externalPageURL>https://www.tripadvisor.com.au/</externalPageURL>
+	</holiday>
+
+	<holiday>
+		<packageName>Bali Break</packageName>
+		<attributes>
+			<description>&descTemplate;exciting activities while also diving into a diversified culture</description>
+			<cost>$200</cost>
+			<numNights>8</numNights>
+			<popularity>4/5 stars</popularity>
+		</attributes>
+		<accomOptions>
+			<roomNumber>50</roomNumber>
+			<location>Bali</location>
+			<additionalCost>50</additionalCost>
+			<bedroomNumber>3</bedroomNumber>
+			<bathroomNumber>1</bathroomNumber>
+		</accomOptions>
+		<couponCode>TY78UO</couponCode>
+		<reviews>"Amazing"</reviews>
+		<promoPicFile src="images/Bali.jpg">images/Bali.jpg</promoPicFile>
+		<externalPageURL>https://www.tripadvisor.com.au/</externalPageURL>
+	</holiday>
+
+	<holiday>
+		<packageName>Newcastle Trip</packageName>
+		<attributes>
+			<description>&descTemplate;adventurous beach activities such as stand-up paddle boarding, quad biking and so much more!</description>
+			<cost>$1000</cost>
+			<numNights>14</numNights>
+			<popularity>5/5 stars</popularity>
+		</attributes>
+		<accomOptions>
+			<roomNumber>75</roomNumber>
+			<location>Newcastle</location>
+			<additionalCost>100</additionalCost>
+			<bedroomNumber>1</bedroomNumber>
+			<bathroomNumber>1</bathroomNumber>
+		</accomOptions>
+		<couponCode>3RT4W3</couponCode>
+		<reviews>"Such a great value for the amount of nights"</reviews>
+		<promoPicFile src="images/Newcastle.jpg">images/Newcastle.jpg</promoPicFile>
+		<externalPageURL>https://www.tripadvisor.com.au/</externalPageURL>
+	</holiday>
+</holidays>

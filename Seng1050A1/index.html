@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css"><!--linking the cascasing style sheet to the html document (style.css)-->
+		<title>goHoliday homepage!</title><!--Title on the browser tab-->
+	</head>
+	<body>
+		<div class="menuBar"> <!--This indicates the bar displaying the relative links to the XML pages at the top of the page-->
+			<a class="link" href="BeachHoliday.xml">Beach Holidays</a><!--Relatively linked XML pages (BeachHoliday.xml, LuxuryHoliday.xml)-->
+			<a class="link" href="LuxuryHoliday.xml">Luxury Holidays</a>
+		</div>
+		<h1 style="font-weight:bolder;"><span>goHoliday!</span></h1><!--Bold heading at the top of the screen, most important heading-->
+		<h2><span><u>About goHoliday:</u></span></h2> <!--2nd most important heading, underlined-->
+
+		<!--paraghraph welcoming the viewers of the html document to the page, includes <strong> tags and an abbreviation, all inside a span -->
+		<p id="welcome"><span>Welcome to the goHoliday homepage! Your one stop website for all your <strong>beachy</strong> and <strong>luxurious</strong> holiday bookings, some even good enough to make you want to go <abbr title="Missing In Action">MIA</abbr> from your regular life. Visit the menubar above for detailed holidays per category or casually browse at the affordable possibilities here.</span></p>
+
+		<!--2nd most important heading, underlined-->
+		<h2><span><u>Featured holiday packages:</u></span></h2>
+		<ul> <!--Unordered list holding the promotional holiday packages-->
+
+			<!--first bullet point displaying the hawaii getaway-->
+			<li><span class="listHeading">Hawaii Getaway</span>
+				<br>
+
+				<!--displays an image from the relative path-->
+				<img src="images/Hawaii.jpeg" alt="Hawaii image">
+
+				<!--a brief description of the promotional package to the right of the image, it includes <strong> tags and an abbreviation for ASAP-->
+				<span class="spanclass">Visit the sandy beaches of Hawaii <abbr title="As Soon As Possible">ASAP</abbr> and getaway from everything. Boasting a 2 bedroom, 1 bathroom villa at the heart of Hawaii you will feel more at home than ever. Rated 4 out of 5 this opportunity only comes <strong>once in a life time!</strong></span>
+			</li>
+
+			<!--second bullet point displaying the london luxury-->
+			<li><span class="listHeading">London Luxury</span>
+				<br>
+
+				<!--displays an image from the relative path-->
+				<img src="images/London.jpg" alt="London image">
+
+				<!--a brief description of the promotional package to the right of the image, it includes <strong> tags and an abbreviation for HUD-->
+				<span class="spanclass">Endure in a holiday full of comfort, rest and luxury with this offer. The London Luxury package offers a penthouse room overlooking the city with room service (including a digital <abbr title="Heads Up Display">HUD</abbr>), 1 bedroom, 1 bathroom and 1 bar table. Rated 5 out of 5 stars, <strong>it doesn't get any better!</strong></span>
+			</li>
+
+			<!--third bullet point displaying the bali break-->
+			<li><span class="listHeading">Bali Break</span>
+				<br>
+
+				<!--displays an image from the relative path-->
+				<img src="images/Bali.jpg" alt="Bali image">
+
+				<!--a brief description of the promotional package to the right of the image, it includes <strong> tags and an abbreviation for POI-->
+				<span class="spanclass">Embark on a trip of a lifetime, jam-packed with entertainment, relaxion and many <abbr title="Point Of Interest's">POI's</abbr>. This Bali Break package offers a villa secluded among the south western area of the island only moments from the beach. The accomodation has everything from 3 bedrooms to 24 hour room service. Rated 4 out of 5 stars, <strong>this package is flawless!</strong></span>
+			</li>
+		</ul>
+		<footer> <!--footer to indicate links and copyright statement-->
+
+			<!--paragraph indicating the websites used to validate the documents-->
+		<p id="foot">These are the websites that were used to validate the previous <abbr title="Hyper Text Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheet">CSS</abbr> and <abbr title="eXtensible Markup Language">XML</abbr> code!</p>
+
+		<!--unordered list containing <a> tags to the webistes used for validation of the documents-->
+		<ul id="ulfoot">
+			<li style="color:orange;"><a href="https://validator.w3.org/">HTML Validator</a></li>
+			<li style="color:red;"><a href="https://validator.w3.org/">CSS Validator</a></li>
+			<li style="color:pink;"><a href="https://www.xmlvalidation.com/">XML Validator</a></li>
+		</ul>
+		<hr>
+
+		<!--the copyright statement formatted in <address> tags displayed at the bottom right of the website-->
+		<address style="text-align: right;">
+		Harlan De Jong<br>
+		<a href="https://www.google.com.au">c3349828@uon.edu.au</a><br>
+		SENG1050<br>
+		</address>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,136 @@
+div.menuBar{ /*assigning all elements under the class menubar and in div 20px font size, black background and a border of 5px wide*/
+	font-size:20px; 
+	background-color: rgba(0,0,0,0.8);
+	border-style: groove;
+	border-width: 5px;
+}
+
+.link{ /*inital colour of links under the class link are initially white*/
+	color:white;
+}
+
+.link:visited{ /*colour of the visited links under class link are turquoise*/
+	color:turquoise; 
+}
+
+.link:hover{ /*colour of the links under the class link are orange when hovered over and font size increase by 1.2 times the size of the current font*/
+	color:orange;
+	font-size:1.2em; 
+}
+
+.link:active{ /*colour of the links under class link are red when clicking on them*/
+	color:red;
+}
+
+#welcome{ /*all text in the welcome id are size 25px, oblique and bold*/
+	font-size: 25px;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+html{ /*text in the html tag is black, 18px font size and times new roman font unless overwritten by other css, the whole page has a 1cm margin on the left*/
+	margin-left: 1cm;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	color:black;
+}
+
+body{ /*the background of the body is an image that doesnt repeat, is fixed and covers the entire page*/
+ 	background-image:url('images/HolidayImage.jpg');
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+  	background-size: cover;
+}
+
+h1 { /*the text in the h1 tags are center aligned, white, 40px font size and in uppercase*/
+  	text-align: center;
+  	color:white;
+  	font-size: 40px;
+  	text-transform: uppercase;
+}
+
+h1 span{ /*the background colour of the h1 span text is black with 20% opacity*/
+	background-color: rgba(0,0,0,0.8);
+}
+
+h2{ /*the text in the h2 tag is white and in all uppercase*/
+	color:white;
+	text-transform: uppercase;
+}
+
+h2 span{ /*the background colour of the h2 span text is black with 20% opacity*/
+	background-color: rgba(0,0,0,0.8);
+}
+
+p{ /*the text in all p tags are font size 22px*/
+	font-size:22px;
+}
+
+p span{ /*the background of the p span is white with 20% opacity*/
+	background-color: rgba(255,255,255,0.8);
+}
+
+ul{ /*the unordered lists have a square bullet point*/
+	list-style-type: square;
+}
+
+li{ /*the list items are to the left of the screen they dont overlap they are padded by 10px and the font soze of the text is 25px*/
+	float:left;
+	clear:left;
+	padding:10px;
+	font-size: 25px;
+}
+
+li span{ /*the list span elements text size is 18px, black and the background colour is white with 20% opacity*/
+	font-size: 18px;
+	color:black; 
+	background-color: rgba(255,255,255,0.8);
+}
+
+img{ /*the images are 40% the width of the page and the height is automatically set via the width, it is aligned to the left of the screen and doesnt overlap and elements
+	the images have a border 5px wide and has a margin of 5px*/
+	width:40%;
+	height:auto;
+	float: left;
+	clear: left;
+	border-style: groove;
+	border-width: 5px;
+	margin: 5px;
+
+}
+
+.listHeading{ /*the text under the class listHeading is white, the background colour is black with 20% opacity and the font size 22px*/
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	font-size: 22px;
+}
+
+.featuredimgp{ /*the text under the class featuredimgp is aligned to the left side of the screen*/
+	float: left;
+
+}
+
+.spanclass{ /*the text under the class spanclass is displayed as a block and has a margin of 5px*/
+	display: block;
+	margin: 5px;
+}
+
+#foot{ /*the text under the id foot is non-overlapping, displayed as a block and has a background colour of white with 20% opacity*/
+	clear:left;
+	display: block;
+	background-color: rgba(255,255,255,0.8);
+}
+
+hr{ /*the hr tag is aligned to the left*/
+	clear: left;
+}
+
+strong{ /*the strong tag sets text to be bold and the colour blue*/
+	font-weight:bold;
+	color:blue;
+}
+
+address{ /*the address tag set text to be displated in a block and have a background colour of white with 20% opacity*/
+	display:block;
+	background-color: rgba(255,255,255,0.8);
+}
